@@ -1,20 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package projetocalcu;
 
 import java.util.Scanner;
 
-/**
- *
- * @author vitor ikeziri
- */
-package projetocalcu;
-
-import java.util.Scanner;
-
-'public class Projetocalcu {
+public class Projetocalcu {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in); 
@@ -31,9 +19,6 @@ import java.util.Scanner;
         System.out.print("Digite o primeiro valor: ");
         v1 = sc.nextDouble();
         
-        System.out.print("Digite o segundo valor: ");
-        v2 = sc.nextDouble();
-        
         System.out.println("Escolha a operação desejada:");
         System.out.println("+  - Soma");
         System.out.println("-  - Subtração");
@@ -43,6 +28,9 @@ import java.util.Scanner;
         // O usuário escolhe o operador
         System.out.print("Digite o operador: ");
         operador = sc.next();
+        
+        System.out.print("Digite o segundo valor: ");
+        v2 = sc.nextDouble();
         
         switch (operador) {
             case "+" -> {
