@@ -24,7 +24,7 @@ Para rodar o projeto localmente, siga os passos abaixo:
 
 Clone o repositório:
 
-git clone https://github.com/seuusuario/siteecommerce.git
+git clone https://github.com/VitorIkeziri/projects/tree/main/EcommerceSite%20vue%20e%20node/SiteEcommerce
 
 Acesse o diretório do projeto:
 
