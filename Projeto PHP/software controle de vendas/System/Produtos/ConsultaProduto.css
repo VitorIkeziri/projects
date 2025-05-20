@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@600&display=swap');
+
+body {
+    background-color: #171A23; /* Cor de fundo da página */
+    font-family: "Electrolize", sans-serif; /* Fonte aplicada */
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 25px auto; /* Centralizar a tabela */
+    font-size: 18px;
+    text-align: left;
+    background-color: #ffffff; /* Fundo branco para a tabela */
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #2452A3; /* Cor do título da tabela */
+    color: #ffffff; /* Cor do texto do título da tabela */
+    font-family: "Electrolize", sans-serif; /* Fonte do título da tabela */
+}
+
+h2 {
+    color: #ffffff; /* Cor do título da página */
+    text-align: center;
+    font-family: "Electrolize", sans-serif; /* Fonte do título da página */
+}
+
+.edit-button {
+    background-color: transparent;
+    border: none;
+    color: #2452A3;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+}
+
+.edit-button:hover {
+    color: #1a3e7a;
+}

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@600&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    color: white;
+    position: fixed;
+    top: 0;
+    overflow-y: auto;
+}
+
+.left-sidebar {
+    background-color: #232323;
+    left: 0;
+}
+
+.right-sidebar {
+    background-color: #0E1017;
+    right: 0;
+    top: 100px; /* Espaço para o top menu */
+    height: calc(100vh - 60px); /* Ajusta a altura para o menu superior */
+}
+
+.logo {
+    width: 150px; /* Largura máxima da logo */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 20px auto; /* Centraliza a logo horizontalmente com margens */
+    display: block; /* Garante que a imagem seja exibida como bloco */
+    text-align: center; /* Centraliza o conteúdo dentro do contêiner */
+}
+
+.menu-item {
+    font-family: "Electrolize", sans-serif;
+    padding: 20px 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.menu-item:hover {
+    background-color: #333;
+}
+
+.menu-icon {
+    margin-right: 10px;
+    font-size: 28px;
+}
+
+.menu-item.active {
+    background-color: #007bff;
+}
+
+.info-item {
+    text-align: center;
+    cursor: default;
+    background: none;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    margin: 20px 40px;
+    font-size: 32px;
+
+
+}
+
+.content {
+    margin-left: 250px;
+    margin-right: 0vh;
+    padding: 20px;
+    width: calc(100% - 250px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #0E1017;
+}
+
+.top-buttons {
+    font-family: "Electrolize", sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #0E1017;
+    padding: 6px;
+    width: 100%;
+}
+
+.button-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    margin-right: 10px;
+    border-bottom: 2px solid #232323;
+}
+
+.button-item:hover {
+    border-bottom: 2px solid #007bff;
+}
+
+.exibi {
+    background-color: #171A23;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: calc(100% - 250px);
+    position: relative; /* Define o contêiner como relativo para o posicionamento absoluto do iframe */
+}
+
+.exibi .iframe-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Posiciona o iframe de forma absoluta dentro do contêiner */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0; /* Remove qualquer padding adicional */
+    margin: 0; /* Remove qualquer margem adicional */
+}
+
+.exibi iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove a borda padrão do iframe */
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 0 10px;
+}
+
+.profile-img {
+    width: 45px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.profile-info {
+    color: white;
+    margin-right: 20px;
+}
+
+.profile-name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.profile-title {
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+.logout-btn {
+    font-family: "Electrolize", sans-serif;
+    background-color: #333;
+    border: none;
+    border-radius: 20px;
+    width: 80px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.logout-btn:hover {
+    background-color: #555;
+}

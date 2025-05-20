@@ -1,0 +1,136 @@
+/* Cadastro.css */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black; /* Adiciona um contorno preto à tabela */
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: white;
+    border: 2px solid;
+  }
+  
+  tr:nth-child(odd) {
+    opacity: 0.7; /* Adiciona um efeito de fade ao fundo */
+    border: 2px solid;
+  }
+  
+  .botaoe {
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.button-link {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    outline: none !important;
+    box-shadow: none !important;
+    position: relative;
+}
+
+.button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    bottom: 0;
+    width: 2px;
+    background-color: black;
+}
+
+.button:first-child:before {
+    display: none;
+}
+  
+  .button:hover {
+    background-color: black;
+  }
+  
+  .button:active {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  body {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .search-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    margin-top: 28px;
+}
+
+.search-input {
+    padding: 8px;
+    width: 200px;
+}
+
+.search-button {
+    /*background-color: orange;*/
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: black;
+}
+
+.search-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("lupa.png"); 
+    background-size: cover;
+    margin-right: 8px;
+}
+.swal-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swal-vertical table {
+    margin-top: 20px;
+    width: auto;
+    max-width: 100%;
+}
+.swal-th {
+    text-align: center;
+}
+.swal-button {
+    /*background-color: orange !important;*/
+    color: white !important;
+    outline: none !important; 
+    box-shadow: none !important; 
+}
+.swal-button--black-border {
+    border: 1px solid black !important;
+}

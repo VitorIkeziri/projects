@@ -1,0 +1,41 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 10px;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 0; /* Removendo borda arredondada */
+    font-size: 16px;
+    width: 150px; /* Largura fixa para manter o botão quadrado */
+    height: 150px; /* Altura fixa para manter o botão quadrado */
+  }
+  
+  .botao:hover {
+    background-color: darkred;
+  }
+  
