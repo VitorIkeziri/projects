@@ -1,0 +1,22 @@
+[ {
+  "id" : 0,
+  "nomeTarefa" : "Tarefa 1",
+  "conteudo" : "Dia do dongo xongo mongo zongo",
+  "dataInsercao" : "2025-05-22 15:01:43",
+  "dataExecucao" : "24/05/2025",
+  "prioridade" : "Média"
+}, {
+  "id" : 1,
+  "nomeTarefa" : "Tarefa 2",
+  "conteudo" : "donk honk xonk bonk ",
+  "dataInsercao" : "2025-05-22 15:04:41",
+  "dataExecucao" : "07/06/2025",
+  "prioridade" : "Alta"
+}, {
+  "id" : 2,
+  "nomeTarefa" : "work3",
+  "conteudo" : "Começo do dia- lavar, secar e  correr ",
+  "dataInsercao" : "2025-05-22 22:18:00",
+  "dataExecucao" : "23/05/2025",
+  "prioridade" : "Alta"
+} ]

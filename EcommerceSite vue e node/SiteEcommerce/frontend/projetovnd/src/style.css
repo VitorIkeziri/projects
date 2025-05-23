@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik+Mono+One&family=Seymour+One&display=swap');
+:root {
+  font-family: "Archivo Black", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #2d2d2dea;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  font-family: "Archivo Black", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button a {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  width: 100%;       /* Garante que a largura ocupe 100% da tela */
+  height: 100vh;     /* Define a altura para 100% da altura da janela */
+  display: flex;     /* Usa Flexbox para garantir que o conteúdo dentro do app seja organizado corretamente */
+  flex-direction: column; /* Organiza os elementos na coluna, caso você precise de elementos verticais */
+  justify-content: flex-start; /* Alinha os itens no topo da tela */
+  align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+.produtos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.produto-card {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+
+/* Flexbox para os itens no nav */
+nav {
+  display: flex;
+  justify-content: space-between; /* Garantindo que os itens fiquem distribuídos horizontalmente */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+nav div {
+  display: flex;
+  align-items: center; /* Alinha os itens internos ao centro */
+}
+
+nav img {
+  margin: 0 1rem; /* Deixa uma margem horizontal para a logo */
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+  max-width: 1200px; /* Ajuste a largura máxima do container */
+  width: 100%; /* Garante que o container ocupe 100% da largura da tela até o limite do max-width */
+}
+
+.product-card {
+  width: 16rem; /* Largura do card de produto */
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Efeito de sombra ao passar o mouse */
+}
+
+.product-card img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.popup {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+input {
+  width: 80%;
+  margin-bottom: 15px;
+  padding: 14px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+
+h1{
+  text-align: center;
+}
+
+.btn-menu{
+  font-family: 'Roboto', sans-serif;
+  padding: 18px 28px;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 15px;
+  cursor: pointer;
+  border: none;
+  background-color: #112b5a;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  margin-top: 12px;
+}
+
+.todos-btn{
+  padding: 20px 32px;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #7c1515;
+  color: white;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  font-family: 'Roboto', sans-serif;
+}
+.todos-btn:hover {
+  background-color: #e4150b;
+  color: white;
+}
+
+.nav-btn {
+  padding: 20px 32px;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #2452A3;
+  color: white;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+li{
+  margin-top: 30px;
+  list-style-type: none;
+}
+
+.btn-mn{
+  margin-top: -10px;
+  padding: 12px 24px;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #2452A3;
+  color: white;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn-mn:hover{
+  background-color:#2FC3D3;
+  color: white;
+}
+
+.nav-btnL {
+  padding: 20px 32px;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #c21818;
+  color: white;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.nav-btnL:hover {
+  background-color: #f90000;
+  color: white;
+}
+
+.nav-btn:hover {
+  background-color: #2FC3D3;
+}
+
+.conteudo {
+  width: 100%;
+  max-width: 600px;
+}
+
+.usuariomenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.2s ease;
+}
+
+.usuariomenu:hover {
+  transform: scale(1.03);
+}
+
+.usuariomenu .icon {
+  font-size: 24px;
+  color: #2452A3;
+  margin-bottom: 6px;
+}
+
+.usuariomenu .nome {
+  font-weight: 600;
+  color: #141616;
+  font-size: 15px;
+}
+
+.usuariomenu .saldo {
+  color: #2FC3D3;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 2px;
+}
+.Menucentral{
+  margin-bottom: 40px;
+  margin-top: 100px;
+  margin-left: 25px;
+}
+.Menubotom{
+  margin-top: 30px;
+  margin-left: 110px;
+}
+.menucaixa {
+  max-width: 550px;
+  margin: 90px auto;
+  padding: 100px;
+  border: 4px solid #ccc;
+  border-radius: 10px;
+}
+.submenucaixa{
+  font-size: 21px;
+  font-family: 'Poppins', sans-serif;
+  max-width: 550px;
+  padding: 105px;
+  text-align: center;
+}
+.submenucaixa input{
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 14px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.butom-lado{
+  margin-left: 25%;
+}
+li{
+  align-self: center;
+}
+
+/* Estilo principal para os itens da lista */
+ul.mb-6 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.mb-6 li {
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #565555;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+ul.mb-6 li:hover {
+  background-color: #5a5959;
+}
+
+/* Estilo da imagem */
+ul.mb-6 li img {
+  width: 64px; /* Largura da imagem */
+  height: 64px; /* Altura da imagem */
+  object-fit: cover; /* Manter a proporção da imagem */
+  margin-bottom: 10px; /* Espaçamento entre a imagem e a descrição */
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Estilo das descrições */
+ul.mb-6 li .text-center p {
+  margin: 2px 0; /* Espaçamento entre as linhas de texto */
+}
+
+ul.mb-6 li .text-center p.font-bold {
+  font-weight: bold; /* Deixar o ID e nome em negrito */
+  font-size: 16px; /* Tamanho da fonte para ID e nome */
+}
+
+ul.mb-6 li .text-center p {
+  font-size: 14px; /* Tamanho da fonte para modelo e cor */
+  color: #ffffff; /* Cor do texto */
+}
+
+/* Estilo para o item selecionado ao passar o mouse */
+ul.mb-6 li:hover .text-center p {
+  color: #ffffff; /* Cor para destaque ao passar o mouse */
+}
