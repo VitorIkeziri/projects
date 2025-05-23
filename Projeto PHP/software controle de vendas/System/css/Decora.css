@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza horizontalmente */
+  flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha quando não houver espaço suficiente */
+}
+
+.botaoe {
+  flex: 1; /* Cresce ou encolhe proporcionalmente com base no espaço disponível */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha à esquerda */
+  justify-content: space-between; /* Espaço igual entre os itens */
+}
+
+.botaod {
+  flex: 1; /* Cresce ou encolhe proporcionalmente com base no espaço disponível */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinha à direita */
+  justify-content: space-between; /* Espaço igual entre os itens */
+  margin-left: 550px;
+}
+
+.button {
+  margin: 25px;
+  padding: 30px 40px;
+  background-color: #eaeaea;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.titulo {
+  font-size: 60px;
+  text-align: center;
+}
+
+.logo {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.imagem {
+  margin-top: -150px;
+}
+
+.Tabela {
+  margin-top: 60px;
+  display: flex;
+  font-family: "Lucida Console", "Courier New", monospace;
+  justify-content: space-between;
+  width: 600px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.Dados {
+  display: block;
+  text-align: center;
+  justify-content: space-between;
+}

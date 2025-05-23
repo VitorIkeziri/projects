@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@600&display=swap');
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Electrolize", sans-serif;
+    
+  }
+  
+  .background-image {
+    background-image: url('../System/Icon/Logo_SSS_wall.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+  }
+  
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 300px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  h1 {
+    color: #0E1017;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-family: "Electrolize", sans-serif;
+  }
+  
+  .set_texto {
+    margin-bottom: 20px;
+  }
+  
+  .set_texto input {
+    width: 85%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-bottom: 1px solid rgb(92, 91, 91);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    outline: none;
+    border-radius: 25px; /* Bordas mais arredondadas */
+  }
+  
+  .set_texto input::placeholder {
+    color: #0E1017;
+    font-family: "Electrolize", sans-serif;
+  }
+  
+  input[type="submit"] {
+    width: 200px; /* Tamanho menor */
+    padding: 10px;
+    background-color: #161750; /* Cor de fundo */
+    border: none;
+    color: white;
+    font-size: 16px; /* Tamanho da fonte menor */
+    cursor: pointer;
+    border-radius: 25px; /* Bordas mais arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+input[type="submit"]:hover {
+    background-color: #130e4b; /* Cor ao passar o mouse */
+}
+
+.error-box {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.set_loga {
+    margin-top: 40px; /* Aumentado o espaçamento */
+}
+
+.set_loga a {
+    color: white;
+    text-decoration: none;
+    font-family: "Electrolize", sans-serif;
+    font-size: 15px;
+}
+.set_loga h4{
+  color: white;
+  font-family: "Electrolize", sans-serif;
+}
+
+.set_loga a:hover {
+    text-decoration: underline;
+}
+  

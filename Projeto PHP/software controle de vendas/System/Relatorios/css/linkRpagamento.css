@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@600&display=swap');
+
+body {
+    background-color: #393939; /* Fundo mais escuro para dar um contraste com os elementos */
+    font-family: "Electrolize", sans-serif;
+    color: #fff; /* Texto branco por padrão */
+}
+
+#filtrosRelatorio label {
+    font-weight: bold;
+    color: #ffffff; /* Garantir que o texto seja branco */
+}
+
+#btnGerarGrafico, #btnGerarExcel {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2452A3; /* Cor do botão */
+    color: #ffffff;
+    border: none; /* Remover bordas padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease;
+}
+
+#btnGerarGrafico:hover, #btnGerarExcel:hover {
+    background-color: #2452A3; /* Cor de fundo ao passar o mouse */
+}
+
+#tabelaVendas th {
+    background-color: #2452A3; /* Cor de fundo da tabela */
+    color: white;
+    text-align: center;
+}
+
+#tabelaVendas td {
+    text-align: center;
+    background-color: #232323; /* Fundo das células da tabela */
+    color: #ffffff; /* Texto branco nas células */
+}
+
+tr:nth-child(even) {
+    background-color: #141616; /* Cor de fundo das linhas pares */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="datetime-local"],
+select,
+textarea {
+    border: 1px solid #2FC3D3; /* Cor de borda em azul-claro */
+    border-radius: 4px; /* Bordas arredondadas */
+    color: #ffffff; /* Cor do texto */
+    background-color: #232323; /* Fundo dos campos de entrada */
+    padding: 8px; /* Espaçamento interno */
+    transition: border-color 0.3s ease; /* Transição suave para foco */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+input[type="datetime-local"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #2452A3; /* Cor da borda ao focar */
+    background-color: #1a1a1a; /* Fundo mais escuro ao focar */
+}
+
+#searchStatus:focus {
+    background-color: #141616; /* Fundo mais escuro ao abrir */
+    color: #ffffff; /* Cor do texto */
+}
+
+select {
+    background-color: #232323; /* Fundo dos selects */
+    color: #ffffff; /* Cor do texto */
+    border: 1px solid #2FC3D3; /* Borda azul-claro */
+    border-radius: 4px;
+}
+
+option {
+    background-color: #232323; /* Cor de fundo das opções */
+    color: #ffffff; /* Cor do texto das opções */
+}
+
+select:hover {
+    border-color: #2452A3; /* Cor da borda ao passar o mouse */
+}
+
+option:hover {
+    background-color: #2FC3D3; /* Cor de fundo da opção ao passar o mouse */
+    color: #ffffff; /* Cor do texto da opção */
+}
+#formapagto {
+  background-color: #232323;
+  color: rgb(255, 255, 255); /* Define a cor do texto para preto */
+}

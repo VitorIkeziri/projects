@@ -1,0 +1,83 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    background: rgb(107, 106, 106);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 12px 15px rgba(0,0,0,0.05);
+}
+
+.center h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.left, .right {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.left label, .right label {
+    color: white;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.left input, .right input {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+}
+
+.botao {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botao input {
+    width: 45%;
+    height: 50px;
+    border: 1px solid;
+    background: #e6b106;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.botao input:hover {
+    border-color: #e6b106;
+    transition: .5s;
+}
+
+#complemento {
+    display: none;
+}
+
+#temComplemento:checked ~ #complemento {
+    display: block;
+}
+
+
+
+
+

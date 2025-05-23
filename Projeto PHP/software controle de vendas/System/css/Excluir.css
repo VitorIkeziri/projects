@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+.texto{
+    color: black;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, orange, black);
+    background-repeat: no-repeat;
+}
+
+.central {
+    width: 600px;
+    height: 400px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.textopara {
+    text-align: center;
+}
+
+.error-box {
+    background: #ffffff;
+    color: #ff0000;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.buttons {
+    grid-column: span 20;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+.buttons button {
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: orange;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: darkorange;
+}
+
+.buttons button:first-child {
+    margin-right: 80px;
+}
+input[name="PesquisaCPF"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none !important; /* Remove o contorno de foco */
+    box-shadow: none !important; /* Remove a sombra de foco */
+  }
+  
+  button[name="Pesquisar"] {
+    padding: 10px 20px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+  }
+  .input Pesquisar:hover {
+    background-color: darkorange;
+}
+  

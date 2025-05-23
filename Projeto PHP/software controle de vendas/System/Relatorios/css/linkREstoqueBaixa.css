@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@600&display=swap');
+
+body {
+    background-color: #393939; /* Fundo principal */
+    font-family: 'Electrolize', sans-serif;
+    color: #ffffff; /* Texto padrão */
+}
+
+.container {
+    max-width: 800px;
+    margin-top: 20px;
+    font-family: 'Electrolize', sans-serif;
+}
+
+#grafico {
+    display: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    font-family: 'Electrolize', sans-serif;
+}
+
+#grafico > div {
+    padding: 10px;
+    font-family: 'Electrolize', sans-serif;
+}
+
+#grafico > div:first-child {
+    flex: 1;
+}
+
+#grafico > div:last-child {
+    flex: 0 0 40%;
+}
+tr{
+    background-color: #141616; /* Cor de fundo das linhas pares */
+}
+
+td{
+    background-color: #141616; /* Cor de fundo das linhas pares */
+    color: white;
+}
+
+th{
+    background-color: #2452A3;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-custom {
+    background-color: #2452A3; /* Cor personalizada */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Adiciona preenchimento */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+}
+
+.btn-custom:hover {
+    background-color: #1d3b6d; /* Cor mais escura para o hover */
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+.btn-custom:focus {
+    outline: none; /* Remove a borda de foco */
+    box-shadow: 0 0 10px rgba(36, 82, 163, 0.6); /* Adiciona um efeito de sombra no foco */
+}
+
+
+
+/* Estilo para inputs de data */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Inverte as cores do ícone para branco */
+}
+
+/* Estilo para inputs e selects com fundo preto e texto branco */
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="datetime-local"],
+select,
+textarea {
+    border: 1px solid #2FC3D3; /* Borda azul clara */
+    border-radius: 4px; /* Bordas arredondadas */
+    color: #ffffff; /* Texto branco */
+    background-color: #232323; /* Fundo preto */
+    padding: 8px;
+    transition: border-color 0.3s ease; /* Transição suave para a borda */
+}
+
+/* Estilo quando o campo recebe foco */
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+input[type="datetime-local"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #2452A3; /* Borda azul escura */
+    background-color: #232323; /* Fundo continua preto */
+    color: #ffffff; /* Texto continua branco */
+}
+
+/* Estilo para alertas com fundo preto e texto branco */
+.alert-black {
+    background-color: #141616; /* Fundo preto */
+    color: #FFFFFF; /* Texto branco */
+    border-color: #444444; /* Cor da borda */
+}
+
+.alert-black .strong {
+    font-weight: bold; /* Negrito para o texto */
+}

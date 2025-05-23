@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@600&display=swap');
+
+body {
+    background-color: #393939; /* Fundo principal */
+    font-family: 'Electrolize', sans-serif;
+    color: #ffffff; /* Texto padrão */
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre os elementos */
+    margin: 20px auto;
+    max-width: 400px; /* Limita a largura máxima */
+    font-family: 'Electrolize', sans-serif;
+}
+
+form label {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+form input[type="number"] {
+    padding: 8px;
+    width: 100px;
+    border: 1px solid #2FC3D3;
+    border-radius: 5px;
+    background-color: #232323;
+    color: #ffffff;
+    text-align: center;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+form input[type="number"]:focus {
+    border-color: #2452A3;
+    background-color: #1a1a1a;
+}
+
+form button {
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #2452A3; /* Azul-escuro */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Electrolize', sans-serif;
+}
+
+form button:hover {
+    background-color: #2FC3D3; /* Azul-claro no hover */
+    transform: scale(1.05);
+}
+
+/* Estilo da seção de botões adicionais */
+.buttons {
+    text-align: center;
+    margin: 20px auto;
+}
+
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2452A3;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Electrolize', sans-serif;
+}
+
+.buttons button:hover {
+    background-color: #2FC3D3;
+    transform: scale(1.05);
+}
+
+#filtrosRelatorio label {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#btnGerarGrafico, #btnGerarExcel {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2FC3D3; /* Azul-claro para botões */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+#btnGerarGrafico:hover, #btnGerarExcel:hover {
+    background-color: #2452A3; /* Azul mais escuro */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+tr{
+    background-color: #141616; /* Cor de fundo das linhas pares */
+}
+
+td{
+    background-color: #141616; /* Cor de fundo das linhas pares */
+}
+
+#tabelaVendas {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+#tabelaVendas th {
+    background-color: #2452A3;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+#tabelaVendas td {
+    text-align: center;
+    background-color: #232323;
+    color: #ffffff;
+    padding: 10px;
+    border: 1px solid #2FC3D3; /* Borda clara */
+}
+
+#tabelaVendas tr:nth-child(even) {
+    background-color: #393939; /* Fundo linhas pares */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="datetime-local"],
+select,
+textarea {
+    border: 1px solid #2FC3D3;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #232323;
+    padding: 8px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+input[type="datetime-local"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #2452A3;
+    background-color: #1a1a1a;
+}
+
+select {
+    background-color: #232323;
+    color: #ffffff;
+    border: 1px solid #2FC3D3;
+    border-radius: 4px;
+}
+
+option {
+    background-color: #232323;
+    color: #ffffff;
+}
+
+#chart {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 80%; /* Ajuste a largura conforme necessário */
+    max-width: 450px; /* Define um tamanho máximo */
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+#stockChart {
+    width: 100%; /* Faz o gráfico ocupar 100% da largura do contêiner */
+    height: 200px; /* Define uma altura fixa para o gráfico */
+}
+
+
+
+#tabelaVendasContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 90%; /* Largura máxima da tabela */
+    overflow-x: auto; /* Rolagem horizontal para tabelas largas */
+}
+
+#tabelaVendas {
+    width: 100%;
+    max-width: 1200px; /* Limite máximo de largura */
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+    border-radius: 8px;
+    overflow: hidden; /* Borda arredondada */
+}
+
+#tabelaVendas th {
+    background-color: #2452A3;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#tabelaVendas td {
+    text-align: center;
+    background-color: #232323;
+    color: #ffffff;
+    padding: 10px;
+    border: 1px solid #2FC3D3;
+}
+
+#tabelaVendas tr:nth-child(even) {
+    background-color: #393939;
+}
+
+#tabelaVendas tr:hover {
+    background-color: #2FC3D3;
+    color: #141616;
+    transition: background-color 0.3s ease;
+}
+
+.button-rounded {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2452A3; /* Azul-escuro */
+    color: #ffffff;
+    border: none;
+    border-radius: 25px; /* Botão arredondado */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+}
+
+.button-rounded:hover {
+    background-color: #2FC3D3; /* Azul-claro ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento no hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Centraliza o contêiner principal */
+.center-container {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos na vertical */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center;
+}
+
+/* Estilo do título */
+.titulo {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-container {
+    display: flex; /* Usando Flexbox */
+    gap: 20px; /* Espaço entre os formulários */
+    justify-content: flex-start; /* Alinha os formulários à esquerda */
+}
+.form-container form {
+    display: flex;
+    flex-direction: column; /* Alinha os itens dentro do formulário em coluna */
+    width: 300px; /* Largura dos formulários */
+}
+.form-container button {
+    margin-top: 10px; /* Espaço entre o select e o botão */
+}
+
+#toggleFilterBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2452A3; /* Azul-escuro */
+    color: #ffffff;
+    border: none;
+    border-radius: 25px; /* Botão arredondado */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+}
+
+#toggleFilterBtn:hover {
+    background-color: #2FC3D3; /* Azul-claro ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento no hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
